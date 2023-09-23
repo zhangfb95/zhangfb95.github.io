@@ -1,3 +1,58 @@
-theme: jekyll-theme-minimal
-title: zhangfb95's homepage
-description: Bookmark this to keep an eye on my project updates!
+# Site settings
+title: 持之以恒学编程
+header-img: "img/Xacebook.jpg"
+tagline: "cn"  
+description: "持之以恒学编程|这一次彻底学会编程"  
+baseurl: ""
+url: "https://zhangfb95.github.io"  
+
+# About/contact
+owner: 
+  name: "付兵"
+  email: zhangfb95@aliyun.com
+  bio: "持之以恒学编程"
+
+# Data
+gavatar: img/favicon64.png
+favicon: img/favicon64.png
+
+douban_username: zhangfb95
+twitter_username: zhangfb95
+github_username: zhangfb95
+facebook_username: zhangfb95
+weibo_username: zhangfb95
+zhihu_username: zhangfb95
+
+# Build settings  
+# use Github Flavored Markdown !important  
+# document: http://jekyllrb.com/docs/configuration/#kramdown  
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 15
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+gems: [jekyll-paginate]
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai
+
+# Defaults for posts
+defaults:
+    scope: 
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "CNFeat"
+      header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
+
+# Comments 
+
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: UA-80884545-1
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in footer navigation

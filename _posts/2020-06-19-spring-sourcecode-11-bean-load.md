@@ -603,7 +603,7 @@ public int loadBeanDefinitions(String location, @Nullable Set<Resource> actualRe
 
 在阅读源码的时候，楼主发现`BeanDefinition`有好几个实现类，如下所示。我们着重分析红框内的类。
 
-![图片.png](img/_posts/2020-06-19-spring-sourcecode-11-bean-load/BeanDefinition-implements.png)
+![图片.png](img/posts/2020-06-19-spring-sourcecode-11-bean-load/BeanDefinition-implements.png)
 
 他们的区别大致是这样的。
 
@@ -1808,7 +1808,7 @@ private void doStart(Map<String, ? extends Lifecycle> lifecycleBeans, String bea
 
 借鉴于网上的一张图，bean加载的过程如下所示：
 
-![图片](img/_posts/2020-06-19-spring-sourcecode-11-bean-load/bean-load.png)
+![图片](img/posts/2020-06-19-spring-sourcecode-11-bean-load/bean-load.png)
 
 而这张图标绿的地方，单独解释如下：
 

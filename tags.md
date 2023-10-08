@@ -25,9 +25,15 @@ header-img: "img/Red-Brown.jpg"
 {% for tag in site.tags %}
 #### {{ tag[0] }}
 {% for post in tag[1] %}
-1. {{ post.date | date:"%Y-%m-%d" }}[{{ post.title }}]({{ post.url }})
++ {{ post.date | date:"%Y-%m-%d" }} [{{ post.title }}]({{ post.url }})
 {% endfor %}
 {% endfor %}
+
+<style>
+  p {
+    margin: 0
+  }
+</style>
 
 <script src="/media/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script> 
 <script language="javascript">

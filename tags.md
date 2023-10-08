@@ -12,7 +12,7 @@ header-img: "img/Red-Brown.jpg"
 3. 相关的文章会「唰」地一声跳到页面顶端
 4. 马上试试？
 
-## 标签列表
+## 标签总览
 
 <div id='tag_cloud'>| 
 {% for tag in site.tags %}
@@ -20,9 +20,12 @@ header-img: "img/Red-Brown.jpg"
 {% endfor %}
 </div>
 
+## 标签列表
+
 <ul class="listing">
+
 {% for tag in site.tags %}
-<h4><a name="{{ tag[0] }}" style="padding-left: 0;">{{ tag[0] }}</a></h4>
+#### {{ tag[0] }}
 {% for post in tag[1] %}
   <li class="listing-item">
   <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>

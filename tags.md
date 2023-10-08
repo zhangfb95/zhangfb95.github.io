@@ -14,7 +14,7 @@ header-img: "img/Red-Brown.jpg"
 
 ## 标签列表
 
-<div id='tag_cloud'>
+<div id='tag_cloud'>| 
 {% for tag in site.tags %}
 <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> | 
 {% endfor %}
@@ -22,7 +22,7 @@ header-img: "img/Red-Brown.jpg"
 
 <ul class="listing">
 {% for tag in site.tags %}
-<h4><a name="{{ tag[0] }}">{{ tag[0] }}</a></h4>
+<h4><a name="{{ tag[0] }}" style="padding-left: 0;">{{ tag[0] }}</a></h4>
 {% for post in tag[1] %}
   <li class="listing-item">
   <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>

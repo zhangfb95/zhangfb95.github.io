@@ -12,7 +12,7 @@ header-img: "img/orange.jpg"
   {% if year != y %}
     {% assign year = y %}
     <!-- <li class="listing-seperator">{{ y }}</li> -->
-    <h4><a name="{{ y }}">{{ y }}</a></h4>
+    <h4>{{ y }}</h4>
   {% endif %}
   <li class="listing-item">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
